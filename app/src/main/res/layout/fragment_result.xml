@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".ui.ResultFragment">
+
+    <TextView
+        android:id="@+id/Distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/blue"
+        android:text="@string/distance"
+        android:textAlignment="gravity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/DistanceWalked"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/_25.95km"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Distance" />
+
+
+    <TextView
+        android:id="@+id/Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Time"
+        android:textColor="@color/blue"
+        android:textAlignment="gravity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/DistanceWalked" />
+
+
+    <TextView
+        android:id="@+id/TimeWalked"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/_00_25_30"
+        android:textAlignment="gravity"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Time" />
+
+    <Button
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+android:layout_marginStart="4dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/Share"
+        app:icon="@drawable/ic_baseline_share_24"
+        app:layout_constraintLeft_toRightOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/TimeWalked" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_marginEnd="4dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/save"
+        app:layout_constraintRight_toLeftOf="@id/guideline2"
+        app:icon="@drawable/ic_baseline_add_location_alt_24"
+        app:layout_constraintTop_toBottomOf="@id/TimeWalked" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

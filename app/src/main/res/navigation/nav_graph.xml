@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/permissionFragment">
+
+    <fragment
+        android:id="@+id/permissionFragment"
+        android:name="com.example.distancetracker.ui.PermissionFragment"
+        android:label="fragment_permission"
+        tools:layout="@layout/fragment_permission" >
+        <action
+            android:id="@+id/action_permissionFragment_to_maps_Fragment"
+            app:destination="@id/maps_Fragment"
+            app:popUpTo="@id/permissionFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <dialog
+        android:id="@+id/resultFragment"
+        android:name="com.example.distancetracker.ui.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_maps_Fragment"
+            app:destination="@id/maps_Fragment"
+            app:popUpTo="@id/maps_Fragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="dist_time"
+            app:argType="com.example.distancetracker.ResultSave.Results" />
+    </dialog>
+    <fragment
+        android:id="@+id/maps_Fragment"
+        android:name="com.example.distancetracker.ui.Maps_Fragment"
+        android:label="fragment_maps_"
+        tools:layout="@layout/fragment_maps_" >
+        <action
+            android:id="@+id/action_maps_Fragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+</navigation>

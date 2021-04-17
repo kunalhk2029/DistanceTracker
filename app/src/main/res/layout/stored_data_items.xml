@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/DateStored"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/_25_apr_21"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="4dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/DateStored"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/_25_56km"
+        android:textSize="18sp"
+        android:id="@+id/DistanceStored"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:layout_marginStart="62dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/DistanceStored"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/_00_29_30"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:layout_marginStart="62dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

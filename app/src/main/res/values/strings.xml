@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">DistanceTracker</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Continue">Continue</string>
+    <string name="permission_description">Welcome to Distance Tracker. In order to use our application we will first need to request location permission from you. Otherwise we will not be able to provide you with our service. If you agree and wish to continue top on the button</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="start">Start</string>
+    <string name="Stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="normal">Normal</string>
+    <string name="satellite">Satellite</string>
+    <string name="terrain">Terrain</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="none">None</string>
+    <string name="resume">Resume</string>
+    <string name="pause">Pause</string>
+    <string name="distance">Distance</string>
+    <string name="_25.95km">25KM</string>
+    <string name="Time">Time</string>
+    <string name="_00_25_30">00:25:30</string>
+    <string name="Share">Share</string>
+    <string name="save">Save</string>
+    <string name="_25_apr_21">25-Apr-21</string>
+    <string name="_25_56km">25.56KM</string>
+    <string name="_00_29_30">00:29:30</string>
+
+</resources>
